@@ -21,5 +21,6 @@
 
 	console.error('Error: Hello World!');
 	
+	console.dir(window);
 
 })();
