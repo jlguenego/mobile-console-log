@@ -1,11 +1,9 @@
+const CircularJSON = require('circular-json');
+
 module.exports = function (req, res, next) {
-    let obj = JSON.parse(req.body.str);
-    console.log('obj', obj);
+    let obj = CircularJSON.parse(req.body.str);
     obj.length = req.body.length;
-    console.log('obj2', obj);
     const array = Array.prototype.slice.apply(obj);
-    console.log('array', array);
-    console.log.apply(console, array);
-    console.log('req.body', req.body);
+    console[req.body.type].apply(console, array);
     res.send('ok');
 };
