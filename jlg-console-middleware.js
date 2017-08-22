@@ -1,4 +1,4 @@
 module.exports = function (req, res, next) {
-    console.log('debug on ', req.url, req.body);
+    console.log(req.body.str);
     res.send('ok');
 };

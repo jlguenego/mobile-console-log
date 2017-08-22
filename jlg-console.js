@@ -10,7 +10,17 @@
 
         this.url = 'http://' + window.location.host + '/jlg-console';
 
-        this.log = function (str) {
+        this.buildStr = function() {
+            let str= '';
+            for (var i = 0; i < arguments.length; i++) {
+                var sep = (i === 0) ? '': ' ';
+                str += sep + arguments[i];
+            }
+            return str;
+        };
+
+        this.log = function () {
+            const str = this.buildStr.apply(this, arguments);
             this.post(str, function () {});
         };
 
