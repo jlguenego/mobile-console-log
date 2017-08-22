@@ -1,34 +1,29 @@
 (function () {
 
-
-
-
-
     function JLGConsole() {
 
         var self = this;
 
         this.url = 'http://' + window.location.host + '/jlg-console';
 
-        this.buildStr = function() {
-            let str= '';
-            for (var i = 0; i < arguments.length; i++) {
-                var sep = (i === 0) ? '': ' ';
-                str += sep + arguments[i];
-            }
-            return str;
+        this.buildData = function() {
+            var data = new FormData();
+            
+            var str = JSON.stringify(arguments);
+            data.append('str', str);
+            data.append('length', arguments.length);
+            return data;
         };
 
         this.log = function () {
-            const str = this.buildStr.apply(this, arguments);
-            this.post(str, function () {});
+            console.log.apply(console, arguments);
+            var data = this.buildData.apply(this, arguments);
+            this.post(data, function () {});
         };
 
-        this.post = function (str, cb) {
+        this.post = function (data, cb) {
             console.log('url', self.url);
-            const data = new FormData();
-            data.append('str', str);
-
+            
             const xhr = new XMLHttpRequest();
             xhr.onreadystatechange = function () {
                 if (this.readyState == 4) {
