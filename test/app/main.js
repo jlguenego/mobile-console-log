@@ -1,27 +1,25 @@
 (function() {
 	'use strict';
 
-	// window.console = window.jlgConsole;
+	console.log('Hello World!');
 
-	jlgConsole.log('Hello World!');
-
-	jlgConsole.log('Hello World!', 12, 'foo');
-	jlgConsole.log('Hello World!', {
+	console.log('Hello World!', 12, 'foo');
+	console.log('Hello World!', {
 		coucou: 13,
 		hello: 'abc'
 	}, 'foo');
 
-	jlgConsole.log('%c Hello World!', 'background: #222; color: #bada55');
+	console.log('%c Hello World!', 'background: #222; color: #bada55');
 	
-	jlgConsole.log('%d + %d = %d', 2, 3, 5);
+	console.log('%d + %d = %d', 2, 3, 5);
 
-	jlgConsole.log('document.body', document.body);
+	console.log('document.body', document.body);
 
-	jlgConsole.log('window', window);
+	console.log('window', window);
 
-	jlgConsole.warn('Warning: Hello World!');
+	console.warn('Warning: Hello World!');
 
-	jlgConsole.error('Error: Hello World!');
+	console.error('Error: Hello World!');
 	
 
 })();
