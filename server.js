@@ -3,7 +3,7 @@
 const express = require('express');
 const serveIndex = require('serve-index');
 const multer = require('multer');
-const mobileConsole = require('../mobile-console-middleware.js');
+const mobileConsole = require('./mobile-console-middleware.js');
 
 const app = express();
 

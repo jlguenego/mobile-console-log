@@ -4,7 +4,7 @@
   "description": "console.log in devtools from a mobile",
   "main": "index.js",
   "scripts": {
-    "test": "node --inspect-brk test/server.js"
+    "test": "node --inspect-brk server.js"
   },
   "repository": {
     "type": "git",
