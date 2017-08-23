@@ -1,14 +1,14 @@
 {
-  "name": "jlg-console",
+  "name": "mobile-console",
   "version": "0.0.1",
   "description": "console.log in devtools from a mobile",
   "main": "index.js",
   "scripts": {
-    "test": "node --inspect-brk test/server.js || chrome 'chrome://inspect'"
+    "test": "node --inspect-brk test/server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jlguenego/jlg-console.git"
+    "url": "git+https://github.com/jlguenego/mobile-console.git"
   },
   "keywords": [
     "devtools",
@@ -18,9 +18,9 @@
   "author": "Jean-Louis GUENEGO",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jlguenego/jlg-console/issues"
+    "url": "https://github.com/jlguenego/mobile-console/issues"
   },
-  "homepage": "https://github.com/jlguenego/jlg-console#readme",
+  "homepage": "https://github.com/jlguenego/mobile-console#readme",
   "devDependencies": {
     "express": "^4.15.4",
     "multer": "^1.3.0",

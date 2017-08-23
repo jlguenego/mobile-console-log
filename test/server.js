@@ -3,11 +3,11 @@
 const express = require('express');
 const serveIndex = require('serve-index');
 const multer = require('multer');
-const jlgConsole = require('../jlg-console-middleware.js');
+const mobileConsole = require('../mobile-console-middleware.js');
 
 const app = express();
 
-app.post('/jlg-console', multer().fields([]), jlgConsole);
+app.post('/mobile-console', multer().fields([]), mobileConsole);
 
 app.use(express.static('.'));
 app.use(serveIndex('.', {

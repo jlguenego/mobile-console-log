@@ -6,7 +6,7 @@
 
         var self = this;
 
-        this.url = 'http://' + window.location.host + '/jlg-console';
+        this.url = 'http://' + window.location.host + '/mobile-console';
 
         this.buildData = function () {
             var data = new FormData();
