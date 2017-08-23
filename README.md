@@ -16,7 +16,7 @@ Ok I write a tool that does that. Here it is !
 ```
 npm i --save-dev mobile-console
 ```
-Note: Use it only during dev. Not in prod, hmmm ?
+Note: Use it only during dev. Not in prod ;)
 
 
 In your HTML file:
@@ -38,6 +38,8 @@ In your HTML file:
 
 </html>
 ```
+
+Note: CircularJSON is a dependancy of this project, so you should already have it in your `node_modules` directory.
 
 ## Server
 
@@ -71,7 +73,9 @@ Click on `inspect` just below it.
 
 The devtool opens. The server.js script is in *paused debugging*. Just start it by clicking on the play button or with key `F8`.
 
-Go to the `console` tab.
+Go to the `console` tab inside the devtool.
+
+If you have your own express server, then just insert the middleware `mobile-console-middleware.js`. Check the existing `server.js` file inside the `console-mobile` module to get inspired.
 
 ## mobile
 
@@ -89,7 +93,8 @@ http://192.168.1.31:8000
 
 Then browse to your app. That's it ! You should see your console.log coming to the devtool !
 
-Cool, isn't it ? If you like it, show it on Github !
+Cool, isn't it ? If it works and you like it, show it on Github !
+If it does not work, just open an issue with your problem. I will see if I can help.
 
 # Author
 
