@@ -59,7 +59,7 @@ node --inspect-brk ./node_modules/mobile-console-log/server.js
 
 The server is started in debug mode.
 
-Note: :star: If you want to customize your own express server, then just insert the middleware `mobile-console-middleware.js`. Check the existing `server.js` file inside the `mobile-console-log` module to get inspired.
+Note: If you want to customize your own express server, then just insert the middleware `mobile-console-middleware.js`. Check the existing `server.js` file inside the `mobile-console-log` module to get inspired.
 
 ## devtool
 
