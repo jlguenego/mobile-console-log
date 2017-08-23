@@ -59,6 +59,8 @@ node --inspect-brk ./node_modules/mobile-console/server.js
 
 The server is started in debug mode.
 
+Note: If you have your own express server, then just insert the middleware `mobile-console-middleware.js`. Check the existing `server.js` file inside the `console-mobile` module to get inspired.
+
 ## devtool
 
 Open chrome at the following url: 
@@ -75,7 +77,7 @@ The devtool opens. The server.js script is in *paused debugging*. Just start it 
 
 Go to the `console` tab inside the devtool.
 
-If you have your own express server, then just insert the middleware `mobile-console-middleware.js`. Check the existing `server.js` file inside the `console-mobile` module to get inspired.
+
 
 ## mobile
 
