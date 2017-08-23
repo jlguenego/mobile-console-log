@@ -7,7 +7,7 @@ const mobileConsole = require('./mobile-console-middleware.js');
 
 const app = express();
 
-app.post('/mobile-console', multer().fields([]), mobileConsole);
+app.post('/mobile-console-log', multer().fields([]), mobileConsole);
 
 app.use(express.static('.'));
 app.use(serveIndex('.', {

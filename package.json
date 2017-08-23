@@ -1,5 +1,5 @@
 {
-  "name": "mobile-console",
+  "name": "mobile-console-log",
   "version": "0.0.1",
   "description": "console.log in devtools from a mobile",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jlguenego/mobile-console.git"
+    "url": "git+https://github.com/jlguenego/mobile-console-log.git"
   },
   "keywords": [
     "devtools",
@@ -18,9 +18,9 @@
   "author": "Jean-Louis GUENEGO",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jlguenego/mobile-console/issues"
+    "url": "https://github.com/jlguenego/mobile-console-log/issues"
   },
-  "homepage": "https://github.com/jlguenego/mobile-console#readme",
+  "homepage": "https://github.com/jlguenego/mobile-console-log#readme",
   "devDependencies": {
     "express": "^4.15.4",
     "multer": "^1.3.0",

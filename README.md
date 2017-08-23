@@ -1,4 +1,4 @@
-# mobile-console
+# mobile-console-log
 
 console.log from a mobile phone ?
 
@@ -14,7 +14,7 @@ Ok I write a tool that does that. Here it is !
 ## Installation
 
 ```
-npm i --save-dev mobile-console
+npm i --save-dev mobile-console-log
 ```
 Note: Use it only during dev. Not in prod ;)
 
@@ -32,7 +32,7 @@ In your HTML file:
 <body>
 	...
 	<script src="path/to/node_modules/circular-json/build/circular-json.js"></script>
-	<script src="path/to/node_modules/mobile-console/mobile-console.js"></script>
+	<script src="path/to/node_modules/mobile-console-log/mobile-console-log.js"></script>
 	<script src="my-app.js"></script>
 </body>
 
@@ -54,7 +54,7 @@ npm i --save-dev express serve-index multer
 Run the server with the `--inspect-brk` node option (debug mode).
 
 ```
-node --inspect-brk ./node_modules/mobile-console/server.js
+node --inspect-brk ./node_modules/mobile-console-log/server.js
 ```
 
 The server is started in debug mode.
