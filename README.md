@@ -45,7 +45,7 @@ Note: CircularJSON is a dependancy of this project, so you should already have i
 
 If you have no specific constraint about server, then just run the provided given express server.
 
-Install the express stuff.
+Install the express modules.
 
 ```
 npm i --save-dev express serve-index multer 
